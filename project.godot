@@ -32,7 +32,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "WATTest",
 "language": "GDScript",
-"path": "res://addons/WAT/core/test/test.gd"
+"path": "res://addons/WAT/test/test.gd"
 } ]
 _global_script_class_icons={
 "BaseLogin": "",
@@ -60,8 +60,9 @@ Display=8
 [application]
 
 config/name="WAT5"
-config/icon="res://icon.png"
+run/main_scene="res://Node.tscn"
+config/icon="res://icon.svg"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "WAT" )
+enabled=PoolStringArray( "res://addons/WAT/plugin.cfg" )

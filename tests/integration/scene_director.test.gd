@@ -19,8 +19,8 @@ func test_When_we_call_a_method_from_the_root_node_that_we_stubbed():
 	describe("When we call a method from the root node that we stubbed")
 
 	director.get_node(".").method("test").stub(9999)
-
-	asserts.is_equal(9999, director.double().get_node(".").test(), "Then we get the stubbed return value")
+	var double = director.double()
+	asserts.is_equal(9999, double.get_node(".").test(), "Then we get the stubbed return value")
 #
 func test_When_we_call_a_method_from_a_child_node_that_we_stubbed():
 	describe("When we call a method from a child node that we stubbed")
